@@ -8,7 +8,7 @@
 		"kirby-plugin"
 	],
 	"license": "Proprietary",
-	"homepage": "https://github.com/chrfickinger/kirby-featurelist",
+	"homepage": "https://github.com/chrfickinger/kirbyblock-featurelist",
 	"authors": [
 		{
 			"name": "Christian Fickinger",
