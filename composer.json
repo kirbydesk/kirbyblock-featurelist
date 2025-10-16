@@ -1,24 +1,25 @@
 {
 	"name": "chrfickinger/kirbyblock-featurelist",
-	"description": "Kirby Block Featurelist",
+	"description": "Kirbyblock Feature list",
 	"type": "kirby-plugin",
-	"keywords": [
-			"kirby",
-			"kirby-plugin"
-	],
-	"license": "MIT",
 	"version": "1.0.0",
+	"keywords": [
+		"kirby",
+		"kirby-plugin"
+	],
+	"license": "Proprietary",
+	"homepage": "https://github.com/chrfickinger/kirby-featurelist",
 	"authors": [
-			{
-					"name": "Christian Fickinger",
-					"email": "mail@christianfickinger.de",
-					"homepage": "https://christianfickinger.de"
-			}
+		{
+			"name": "Christian Fickinger",
+			"email": "mail@christianfickinger.de",
+			"homepage": "https://christianfickinger.de"
+		}
 	],
 	"extra": {
-			"installer-name": "kirbyblock-featurelist"
+		"installer-name": "kirbyblock-featurelist"
 	},
 	"require": {
-			"chrfickinger/kirby-fields": "^1.0"
+		"chrfickinger/kirby-fields": "^1.0"
 	}
 }
