@@ -1,4 +1,4 @@
 <?php return array(
 
-	'kd.featurelist.title' => 'Feature list',
+	'kdblockfeaturelist.title' => 'Feature list',
 );
