@@ -1,4 +1,4 @@
 <?php return array(
 
-	'kdblockfeaturelist.title' => 'Feature list',
+	'kirbyblock-featurelist.name' => 'Feature List',
 );
