@@ -2,19 +2,16 @@
 
     /* -------------- Config --------------*/
     $config   = pwConfig::load('pwfeaturelist');
-    $settings = $config['settings'];
-    $defaults = $config['defaults'];
-
-    /* -------------- Text Mode --------------*/
-    $mode    = $defaults['text-mode'] ?? null;
-    $mode    = is_string($mode) ? strtolower(trim($mode)) : null;
-    $allowed = ['textarea', 'writer', 'markdown'];
-    $type    = in_array($mode, $allowed, true) ? $mode : 'textarea';
+		$settings    = $config['settings'];
+		$tabSettings = $config['tabs'];
+		$defaults    = $config['defaults'];
+		$fields      = $config['fields'];
+		$editor      = $config['editor'];
 
     /* -------------- Allowed Fields --------------*/
-    $defaultHeading = !empty($settings['heading']);
-    $defaultTagline = !empty($settings['tagline']);
-		$defaultButtons = !empty($settings['buttons']);
+		$defaultTagline = !empty($settings['tagline']);
+		$defaultHeading = !empty($settings['heading']);
+		$defaultEditor = !empty($settings['editor']);
 
 		/* -------------- Tabs --------------*/
     $tabs = [];
@@ -28,48 +25,31 @@
 		if ($defaultTagline) {
 			$contentFields['tagline'] = [
 				'extends' => 'pagewizard/fields/tagline',
+				'align'   => $fields['align-tagline']
 			];
 		}
 		/* -------------- Heading --------------*/
 		if ($defaultHeading) {
 			$contentFields['heading'] = [
 				'extends' => 'pagewizard/fields/heading',
+				'align'   => $fields['align-heading']
 			];
 		}
-		/* -------------- Texts --------------*/
-		$contentFields['textTextarea'] = [
-			'extends' => 'pagewizard/fields/text-textarea',
-			'when'    => ['textMode' => 'textarea'],
-		];
-		$contentFields['textWriterAlignment'] = [
-			'type' => 'pwalign',
-			'default' => $defaults['text-alignment'] ?? 'left',
-			'when'    => ['textMode' => 'writer'],
-		];
-		$contentFields['textWriter'] = [
-			'extends' => 'pagewizard/fields/text-writer',
-			'when'    => ['textMode' => 'writer'],
-		];
-		$contentFields['textMarkdownAlignment'] = [
-			'type' => 'pwalign',
-			'default' => $defaults['text-alignment'] ?? 'left',
-			'when'    => ['textMode' => 'markdown'],
-		];
-		$contentFields['textMarkdown'] = [
-			'extends' => 'pagewizard/fields/text-markdown',
-			'when'    => ['textMode' => 'markdown'],
-		];
-
-		/* -------------- Buttons --------------*/
-		if ($defaultButtons) {
-			$contentFields['buttonsAlignment'] = [
-				'type' => 'pwalign',
-				'default' => $defaults['buttons-alignment'] ?? 'left',
-			];
-			$contentFields['buttons'] = [
-				'extends' => 'blocks/pwButtons',
-			];
+		/* -------------- Editor --------------*/
+		if ($defaultEditor) {
+			$contentFields['editor'] = pwEditor::contentField($defaults, $editor, $settings, $fields);
 		}
+		/* -------------- Blocks --------------*/
+		$contentFields['blocksAlignment'] = [
+			'type'    => 'pwalign',
+			'align'   => $fields['align-blocks'],
+			'default' => $fields['align-blocks'],
+		];
+		$contentFields['blocks'] = [
+			'extends'   => 'pagewizard/fields/blocks',
+			'label'   => 'kirbyblock-featurelist.items',
+			'fieldsets' => ['pwfeaturelistitem'],
+		];
 
 		$tabs['content'] = [
 			'label'  => 'pw.tab.content',
@@ -77,13 +57,39 @@
 		];
 
 		/* -------------- Layout Tab --------------*/
-		$tabs['layout'] = pwLayout::options('pwfeaturelist', $defaults);
+		$tabs['layout'] = pwLayout::options('pwfeaturelist', $defaults, [
+			'headlineColumns' => ['extends' => 'pagewizard/headlines/columns'],
+			'columnsSm' => [
+				'extends' => 'pagewizard/fields/columns',
+				'default' => $defaults['columns-sm'],
+				'label' => 'pw.field.columns.sm',
+				'help' => 'pw.field.columns.sm.help'
+			],
+			'columnsMd' => [
+				'extends' => 'pagewizard/fields/columns',
+				'default' => $defaults['columns-md'],
+				'label' => 'pw.field.columns.sm',
+				'help' => 'pw.field.columns.md.help'
+			],
+			'columnsLg' => [
+				'extends' => 'pagewizard/fields/columns',
+				'default' => $defaults['columns-lg'],
+				'label' => 'pw.field.columns.sm',
+				'help' => 'pw.field.columns.lg.help'
+			],
+			'columnsXl' => [
+				'extends' => 'pagewizard/fields/columns',
+				'default' => $defaults['columns-xl'],
+				'label' => 'pw.field.columns.sm',
+				'help' => 'pw.field.columns.xl.help'
+			]
+		]);
 
 		/* -------------- Style Tab --------------*/
 		$tabs['style'] = pwStyle::options('pwfeaturelist', $defaults);
 
 		/* -------------- Common Tabs (grid, spacing, theme) --------------*/
-		pwConfig::buildTabs('pwfeaturelist', $defaults, $settings, $tabs);
+		pwConfig::buildTabs('pwfeaturelist', $defaults, $tabSettings, $tabs);
 
 		/* -------------- Settings Tab --------------*/
 		$tabs['settings'] = pwSettings::options('pwfeaturelist', $defaults);
@@ -94,5 +100,8 @@
 			'icon'  => 'featurelist',
 			'tabs'	=> $tabs
 		];
-	}
+	},
+
+	'blocks/pwfeaturelistitem' => \Kirby\Data\Data::read(__DIR__ . '/../blueprints/item.yml'),
+
 ];

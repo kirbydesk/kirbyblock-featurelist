@@ -1,0 +1,35 @@
+---
+name: kirbyblock-featurelist.item
+icon: item
+tabs:
+  content:
+    label: pw.tab.content
+    fields:
+      headlineContent:
+        extends: pagewizard/headlines/content
+      heading:
+        type: text
+        label: kirbyblock-featurelist.item.heading
+        help: kirbyblock-featurelist.item.heading.help
+        placeholder: kirbyblock-featurelist.item.heading.placeholder
+      description:
+        type: writer
+        marks:
+          - bold
+          - italic
+          - underline
+          - strike
+          - link
+        nodes:
+          - bulletList
+          - orderedList
+        label: kirbyblock-featurelist.item.description
+        help: kirbyblock-featurelist.item.description.help
+        placeholder: kirbyblock-featurelist.item.description.placeholder
+  style:
+    label: pw.tab.style
+    fields:
+      headlineStyle:
+        extends: pagewizard/headlines/style
+      icon:
+        extends: pagewizard/fields/icon
