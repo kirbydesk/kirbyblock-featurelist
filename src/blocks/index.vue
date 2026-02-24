@@ -34,9 +34,12 @@
 
 				<!-- Blocks -->
 				<div v-if="blockItems.length" class="pwItems" :data-align="content.blocksalignment || fieldDefaults['align-blocks']">
-					<div v-for="item in blockItems" :key="item.id" class="pwItem">
-						<div class="pwItemHeading" v-if="item.content.heading">{{ item.content.heading }}</div>
-						<div class="pwItemText" v-if="item.content.description" v-html="item.content.description"></div>
+					<div v-for="item in blockItems" :key="item.id" class="pwItem" :class="{'ishidden': item.isHidden}">
+						<div v-if="item.content.icon" class="pwIcon" v-html="item.content.icon"></div>
+						<div class="pwContent">
+							<div class="pwHeading" v-if="item.content.heading">{{ item.content.heading }}</div>
+							<div class="pwText" v-if="item.content.description" v-html="item.content.description"></div>
+						</div>
 					</div>
 				</div>
 
@@ -89,3 +92,43 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+div.pwItems {
+	padding: var(--spacing-4) 0;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-6);
+
+	div.pwItem {
+		display: flex;
+		gap: var(--spacing-4);
+		align-items: flex-start;
+
+		div.pwIcon {
+			flex-shrink: 0;
+			color: var(--pw-color-text, inherit);
+		}
+		div.pwHeading {
+			font-weight: var(--font-bold);
+    	font-size: var(--text-md);
+			margin-bottom: var(--spacing-1);
+			color: var(--pw-color-heading, inherit);
+		}
+		div.pwText {
+			font-size: var(--text-sm);
+			line-height: 1.2rem;
+			opacity: 0.8;
+			word-break: break-word;
+			overflow-wrap: anywhere;
+			color: var(--pw-color-text, inherit);
+		}
+	}
+}
+
+div.pwIcon :deep(svg) {
+	width: 50px;
+	height: 50px;
+	fill: var(--pw-color-icon, inherit);
+}
+</style>

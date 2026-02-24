@@ -1477,7 +1477,7 @@ Please report this to https://github.com/markedjs/marked.`, e) {
   var _sfc_render$1 = function render() {
     var _vm = this, _c = _vm._self._c;
     return _c("div", { staticClass: "pwPreview", style: _vm.colorVars, attrs: { "data-kirbyblock": "featurelist", "data-margintop": _vm.content.margintop === true ? "true" : null, "data-marginbottom": _vm.content.marginbottom === true ? "true" : null }, on: { "dblclick": _vm.open } }, [_c("pwBlockinfo", { attrs: { "value": _vm.$t("kirbyblock-featurelist.name"), "icon": "featurelist" } }), _c("div", { staticClass: "pwGrid" }, [_c("div", { staticClass: "pwGridItem", style: _vm.gridVars, attrs: { "data-paddingtop": _vm.content.paddingtop === true ? "true" : null, "data-paddingright": _vm.content.paddingright === true ? "true" : null, "data-paddingbottom": _vm.content.paddingbottom === true ? "true" : null, "data-paddingleft": _vm.content.paddingleft === true ? "true" : null } }, [_vm.settings.tagline ? _c("pwTagline", { attrs: { "value": _vm.content.tagline, "alignDefault": _vm.fieldDefaults["align-tagline"] } }) : _vm._e(), _vm.settings.heading ? _c("pwHeading", { attrs: { "value": _vm.content.heading, "data-level": _vm.content.level, "alignDefault": _vm.fieldDefaults["align-heading"] } }) : _vm._e(), _vm.settings.editor ? _c("pwEditor", { attrs: { "content": _vm.content, "alignDefault": _vm.fieldDefaults["align-editor"] } }) : _vm._e(), _vm.blockItems.length ? _c("div", { staticClass: "pwItems", attrs: { "data-align": _vm.content.blocksalignment || _vm.fieldDefaults["align-blocks"] } }, _vm._l(_vm.blockItems, function(item) {
-      return _c("div", { key: item.id, staticClass: "pwItem" }, [item.content.heading ? _c("div", { staticClass: "pwItemHeading" }, [_vm._v(_vm._s(item.content.heading))]) : _vm._e(), item.content.description ? _c("div", { staticClass: "pwItemText", domProps: { "innerHTML": _vm._s(item.content.description) } }) : _vm._e()]);
+      return _c("div", { key: item.id, staticClass: "pwItem", class: { "ishidden": item.isHidden } }, [item.content.icon ? _c("div", { staticClass: "pwIcon", domProps: { "innerHTML": _vm._s(item.content.icon) } }) : _vm._e(), _c("div", { staticClass: "pwContent" }, [item.content.heading ? _c("div", { staticClass: "pwHeading" }, [_vm._v(_vm._s(item.content.heading))]) : _vm._e(), item.content.description ? _c("div", { staticClass: "pwText", domProps: { "innerHTML": _vm._s(item.content.description) } }) : _vm._e()])]);
     }), 0) : _vm._e()], 1)])], 1);
   };
   var _sfc_staticRenderFns$1 = [];
@@ -1488,14 +1488,14 @@ Please report this to https://github.com/markedjs/marked.`, e) {
     _sfc_staticRenderFns$1,
     false,
     null,
-    null
+    "823ce87b"
   );
   __component__$1.options.__file = "/Users/christian/Projects/kirbydesk/site/plugins/kirbyblock-featurelist/src/blocks/index.vue";
   const pwfeaturelist = __component__$1.exports;
   const _sfc_main = {};
   var _sfc_render = function render() {
     var _vm = this, _c = _vm._self._c;
-    return _c("div", { staticClass: "pwPreview", on: { "dblclick": _vm.open } }, [_c("div", { staticClass: "item", on: { "dblclick": _vm.open } }, [_c("div", [_c("div", { staticClass: "pwHeading" }, [_vm.content.heading.length ? _c("div", { on: { "blur": function($event) {
+    return _c("div", { staticClass: "pwPreview", on: { "dblclick": _vm.open } }, [_c("div", { staticClass: "item", on: { "dblclick": _vm.open } }, [_vm.content.icon ? _c("div", { staticClass: "pwIcon" }, [_c("div", { domProps: { "innerHTML": _vm._s(_vm.content.icon) } })]) : _vm._e(), _c("div", [_c("div", { staticClass: "pwHeading" }, [_vm.content.heading.length ? _c("div", { on: { "blur": function($event) {
       return _vm.update({ heading: $event.target.innerText });
     } } }, [_vm._v(" " + _vm._s(_vm.content.heading) + " ")]) : _c("div", { staticClass: "placeholder" }, [_vm._v(" " + _vm._s(_vm.$t("kirbyblock-featurelist.item.heading.placeholder")) + " ")])]), _c("div", { staticClass: "pwText" }, [_vm.content.description ? _c("div", { domProps: { "innerHTML": _vm._s(_vm.content.description) } }) : _c("div", { staticClass: "placeholder" }, [_vm._v(" " + _vm._s(_vm.$t("kirbyblock-featurelist.item.description.placeholder")) + " ")])])])])]);
   };

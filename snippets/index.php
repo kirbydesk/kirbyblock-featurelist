@@ -3,11 +3,16 @@
 // Config
 $config   = pwConfig::load('pwfeaturelist');
 $settings = $config['settings'];
+$defaults = $config['defaults'];
 
-// Custom Background
+// Styles
+$blockId = 'b'.$block->id();
+echo '<style>';
 if ($block->content()->style()->value() === 'custom'):
-	echo '<style>section[data-block-id="b'.$block->id().'"] { color: '.$block->content()->textcolor()->value().'; background-color: '.$block->content()->backgroundcolor()->value().' }</style>';
+	echo 'section[data-block-id="'.$blockId.'"] { color: '.$block->content()->textcolor()->value().'; background-color: '.$block->content()->backgroundcolor()->value().' }';
 endif;
+echo 'section[data-block-id="'.$blockId.'"] div[data-block="items"] { --gap-sm:'.$defaults['gap-sm'].';--gap-md:'.$defaults['gap-md'].';--gap-lg:'.$defaults['gap-lg'].';--gap-xl:'.$defaults['gap-xl'].';--icon-size:'.$defaults['icon-size'].' }';
+echo '</style>';
 
 // Section
 echo '<section';
@@ -52,8 +57,43 @@ if (!empty($settings['editor'])):
 	snippet('editor', ['content' => $block]);
 endif;
 
-// Blocks
 
+// Blocks
+$items = $block->blocks()->toBlocks();
+if ($items->count() > 0):
+
+	echo '<div data-block="items"';
+	echo ' data-columns-sm="'.$block->columnssm()->value().'"';
+	echo ' data-columns-md="'.$block->columnsmd()->value().'"';
+	echo ' data-columns-lg="'.$block->columnslg()->value().'"';
+	echo ' data-columns-xl="'.$block->columnsxl()->value().'"';
+	echo ' data-align="'.$block->blocksalignment()->value().'"';
+	echo '>'."\n";
+	foreach ($items as $item):
+
+		echo '<div data-block="item">'."\n";
+
+		// Icon
+		if ($item->icon()->isNotEmpty()):
+			echo '<div data-field="icon">'.$item->icon()->value().'</div>';
+		endif;
+
+		// Content
+		echo '<div data-field="content">'."\n";
+
+		// Heading
+		echo '<div data-field="heading" data-align="'.$block->blocksalignment()->value().'">'.$item->heading()->value().'</div>';
+
+		// Description
+		echo '<div data-field="description" data-align="'.$block->blocksalignment()->value().'">'.$item->description()->value().'</div>';
+
+		echo '</div>'."\n"; // End Content
+
+		echo '</div>'."\n";
+	endforeach;
+
+	echo '</div>'."\n";
+endif; // End Items
 
 echo '</div></div>'."\n"; // End Grid
 echo '</section>'."\n";

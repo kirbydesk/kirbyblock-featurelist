@@ -10,10 +10,15 @@
     "padding-right": true,
     "padding-bottom": true,
     "padding-left": true,
-		"columns-sm": 2,
-		"columns-md": 2,
-		"columns-lg": 3,
-		"columns-xl": 5
+		"columns-sm": "2",
+		"columns-md": "2",
+		"columns-lg": "3",
+		"columns-xl": "5",
+		"gap-sm": "3rem",
+		"gap-md": "3rem",
+		"gap-lg": "2rem",
+		"gap-xl": "2rem",
+		"icon-size": "2.5rem"
   },
   "style": {
     "style": "default",

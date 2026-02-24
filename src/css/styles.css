@@ -1,3 +1,73 @@
 section[data-block="featurelist"] {
 
+	div[data-block="items"] {
+		div[data-block="item"] {
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+			align-items: flex-start;
+
+			div[data-field="icon"] {
+				flex-shrink: 0;
+				width: var(--icon-size);
+
+				svg {
+					width: var(--icon-size);
+					height: var(--icon-size);
+					fill: var(--pw-color-icon);
+				}
+			}
+			div[data-field="content"] {
+				flex: 1;
+
+				div[data-field="description"] {
+					color: var(--pw-color-text-dimmed);
+				}
+			}
+		}
+	}
+}
+
+/* Columns - Small (from 640px) */
+@media (min-width: 640px) {
+	section[data-block="featurelist"] div[data-block="items"] { display: grid; gap: var(--gap-sm); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="1"] { grid-template-columns: repeat(1, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="2"] { grid-template-columns: repeat(2, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="3"] { grid-template-columns: repeat(3, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="4"] { grid-template-columns: repeat(4, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="5"] { grid-template-columns: repeat(5, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="6"] { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* Columns - Medium (from 768px) */
+@media (min-width: 768px) {
+	section[data-block="featurelist"] div[data-block="items"] { gap: var(--gap-md); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-md="1"] { grid-template-columns: repeat(1, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-md="2"] { grid-template-columns: repeat(2, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-md="3"] { grid-template-columns: repeat(3, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-md="4"] { grid-template-columns: repeat(4, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-md="5"] { grid-template-columns: repeat(5, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-md="6"] { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* Columns - Large (from 1024px) */
+@media (min-width: 1024px) {
+	section[data-block="featurelist"] div[data-block="items"] { gap: var(--gap-lg); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="1"] { grid-template-columns: repeat(1, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="2"] { grid-template-columns: repeat(2, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="3"] { grid-template-columns: repeat(3, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="4"] { grid-template-columns: repeat(4, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="5"] { grid-template-columns: repeat(5, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="6"] { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* Columns - Extra Large (from 1280px) */
+@media (min-width: 1280px) {
+	section[data-block="featurelist"] div[data-block="items"] { gap: var(--gap-xl); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="1"] { grid-template-columns: repeat(1, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="2"] { grid-template-columns: repeat(2, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="3"] { grid-template-columns: repeat(3, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="4"] { grid-template-columns: repeat(4, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="5"] { grid-template-columns: repeat(5, 1fr); }
+	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="6"] { grid-template-columns: repeat(6, 1fr); }
 }

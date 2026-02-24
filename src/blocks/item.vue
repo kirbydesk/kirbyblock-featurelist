@@ -1,6 +1,9 @@
 <template>
 	<div class="pwPreview" @dblclick="open">
 		<div class="item" @dblclick="open">
+			<div v-if="content.icon" class="pwIcon">
+				<div v-html="content.icon"></div>
+			</div>
 			<div>
 				<div class="pwHeading">
 					<div
@@ -42,13 +45,13 @@ div.item {
     div {
       width: 50px;
       margin: auto;
-
-      svg {
-        width: 50px;
-        height: 50px;
-        fill: currentColor;
-      }
     }
+		:deep(svg) {
+			width: 50px;
+			height: 50px;
+			fill: currentColor;
+			opacity: 0.5;
+		}
   }
 
   div.pwHeading {
