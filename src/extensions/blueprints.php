@@ -68,19 +68,19 @@
 			'columnsMd' => [
 				'extends' => 'pagewizard/fields/columns',
 				'default' => $defaults['columns-md'],
-				'label' => 'pw.field.columns.sm',
+				'label' => 'pw.field.columns.md',
 				'help' => 'pw.field.columns.md.help'
 			],
 			'columnsLg' => [
 				'extends' => 'pagewizard/fields/columns',
 				'default' => $defaults['columns-lg'],
-				'label' => 'pw.field.columns.sm',
+				'label' => 'pw.field.columns.lg',
 				'help' => 'pw.field.columns.lg.help'
 			],
 			'columnsXl' => [
 				'extends' => 'pagewizard/fields/columns',
 				'default' => $defaults['columns-xl'],
-				'label' => 'pw.field.columns.sm',
+				'label' => 'pw.field.columns.xl',
 				'help' => 'pw.field.columns.xl.help'
 			]
 		]);
