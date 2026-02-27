@@ -2,7 +2,7 @@
   "fields": {
     "tagline": true,
     "heading": true,
-    "editor": ["textarea", "writer"]
+		"editor": ["textarea", "writer"]
   },
   "tabs": {
     "grid": true

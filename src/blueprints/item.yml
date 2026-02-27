@@ -23,6 +23,8 @@ tabs:
         nodes:
           - bulletList
           - orderedList
+        toolbar:
+          inline: false
         label: kirbyblock-featurelist.item.description
         help: kirbyblock-featurelist.item.description.help
         placeholder: kirbyblock-featurelist.item.description.placeholder

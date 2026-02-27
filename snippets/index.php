@@ -5,14 +5,14 @@ $config   = pwConfig::load('pwfeaturelist');
 $settings = $config['settings'];
 $defaults = $config['defaults'];
 
-// Styles
-$blockId = 'b'.$block->id();
-echo '<style>';
+// Custom CSS
 if ($block->content()->style()->value() === 'custom'):
-	echo 'section[data-block-id="'.$blockId.'"] { color: '.$block->content()->textcolor()->value().'; background-color: '.$block->content()->backgroundcolor()->value().' }';
+	snippet('customcss', [
+		'blockid' => 'b'.$block->id(),
+		'textcolor' => $block->content()->textcolor()->value(),
+		'backgroundcolor' => $block->content()->backgroundcolor()->value(),
+	]);
 endif;
-echo 'section[data-block-id="'.$blockId.'"] div[data-block="items"] { --gap-sm:'.$defaults['gap-sm'].';--gap-md:'.$defaults['gap-md'].';--gap-lg:'.$defaults['gap-lg'].';--gap-xl:'.$defaults['gap-xl'].';--icon-size:'.$defaults['icon-size'].' }';
-echo '</style>';
 
 // Section
 echo '<section';
@@ -85,7 +85,7 @@ if ($items->count() > 0):
 		echo '<div data-field="heading" data-align="'.$block->blocksalignment()->value().'">'.$item->heading()->value().'</div>';
 
 		// Description
-		echo '<div data-field="description" data-align="'.$block->blocksalignment()->value().'">'.$item->description()->value().'</div>';
+		echo '<div data-field="text" data-opacity="dimmed" data-align="'.$block->blocksalignment()->value().'">'.$item->description()->value().'</div>';
 
 		echo '</div>'."\n"; // End Content
 

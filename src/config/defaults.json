@@ -13,16 +13,10 @@
 		"columns-sm": "2",
 		"columns-md": "2",
 		"columns-lg": "3",
-		"columns-xl": "5",
-		"gap-sm": "3rem",
-		"gap-md": "3rem",
-		"gap-lg": "2rem",
-		"gap-xl": "2rem",
-		"icon-size": "2.5rem"
+		"columns-xl": "5"
   },
   "style": {
-    "style": "default",
-    "block-size": "content"
+    "style": "default"
   },
   "grid": {
     "grid-size-sm": 12,
@@ -35,7 +29,8 @@
     "grid-offset-xl": 1
   },
   "settings": {
+		"block-size": "content",
     "margin-top": false,
-    "margin-bottom": true
+    "margin-bottom": false
   }
 }

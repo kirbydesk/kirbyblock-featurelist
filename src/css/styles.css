@@ -1,27 +1,62 @@
 section[data-block="featurelist"] {
 
+	/* -------------- Tagline Margins--------------*/
+	[data-field="tagline"] {
+		+ [data-field="heading"] {
+			margin-top: 0.5rem;
+		}
+		+ [data-field="textarea"],
+		+ [data-field="writer"],
+		+ [data-field="markdown"] {
+			margin-top: 0.3rem;
+		}
+		+ [data-block="items"] {
+			margin-top: 1rem;
+		}
+	}
+	/* -------------- Heading Margins--------------*/
+	[data-field="heading"] {
+		+ [data-field="textarea"],
+		+ [data-field="writer"],
+		+ [data-field="markdown"] {
+			margin-top: 0.5rem;
+		}
+		+ [data-block="items"] {
+			margin-top: 1.2rem;
+		}
+	}
+	/* -------------- Texts Margins--------------*/
+	[data-field="textarea"],
+	[data-field="writer"],
+	[data-field="markdown"] {
+		+ [data-block="items"] {
+			margin-top: 2rem;
+		}
+	}
+
+	/* -------------- Items--------------*/
 	div[data-block="items"] {
 		div[data-block="item"] {
 			display: flex;
 			flex-direction: row;
 			gap: 1rem;
 			align-items: flex-start;
+			margin-bottom: 1.2rem;
 
 			div[data-field="icon"] {
 				flex-shrink: 0;
-				width: var(--icon-size);
+				width: 2.5rem;
 
 				svg {
-					width: var(--icon-size);
-					height: var(--icon-size);
-					fill: var(--pw-color-icon);
+					width: 2.5rem;
+					height: 2.5rem;
 				}
 			}
 			div[data-field="content"] {
 				flex: 1;
 
-				div[data-field="description"] {
-					color: var(--pw-color-text-dimmed);
+				[data-field="heading"] + [data-field="text"]{
+					margin-top: 0.2rem;
 				}
 			}
 		}
@@ -30,7 +65,15 @@ section[data-block="featurelist"] {
 
 /* Columns - Small (from 640px) */
 @media (min-width: 640px) {
-	section[data-block="featurelist"] div[data-block="items"] { display: grid; gap: var(--gap-sm); }
+	section[data-block="featurelist"] div[data-block="items"] {
+		display: grid;
+		gap: 1.5rem;
+		margin-bottom: 1.5rem;
+
+		div[data-block="item"] {
+			margin-bottom: 0;
+		}
+	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="2"] { grid-template-columns: repeat(2, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-sm="3"] { grid-template-columns: repeat(3, 1fr); }
@@ -41,7 +84,10 @@ section[data-block="featurelist"] {
 
 /* Columns - Medium (from 768px) */
 @media (min-width: 768px) {
-	section[data-block="featurelist"] div[data-block="items"] { gap: var(--gap-md); }
+	section[data-block="featurelist"] div[data-block="items"] {
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-md="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-md="2"] { grid-template-columns: repeat(2, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-md="3"] { grid-template-columns: repeat(3, 1fr); }
@@ -52,7 +98,10 @@ section[data-block="featurelist"] {
 
 /* Columns - Large (from 1024px) */
 @media (min-width: 1024px) {
-	section[data-block="featurelist"] div[data-block="items"] { gap: var(--gap-lg); }
+	section[data-block="featurelist"] div[data-block="items"] {
+		gap: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="2"] { grid-template-columns: repeat(2, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="3"] { grid-template-columns: repeat(3, 1fr); }
@@ -63,7 +112,10 @@ section[data-block="featurelist"] {
 
 /* Columns - Extra Large (from 1280px) */
 @media (min-width: 1280px) {
-	section[data-block="featurelist"] div[data-block="items"] { gap: var(--gap-xl); }
+	section[data-block="featurelist"] div[data-block="items"] {
+		gap: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="2"] { grid-template-columns: repeat(2, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="3"] { grid-template-columns: repeat(3, 1fr); }

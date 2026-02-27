@@ -57,7 +57,7 @@
 		];
 
 		/* -------------- Layout Tab --------------*/
-		$tabs['layout'] = pwLayout::options('pwfeaturelist', $defaults, [
+		pwConfig::addTab($tabs, 'layout', $tabSettings['layout'] ?? true, pwLayout::options('pwfeaturelist', $defaults, [
 			'headlineColumns' => ['extends' => 'pagewizard/headlines/columns'],
 			'columnsSm' => [
 				'extends' => 'pagewizard/fields/columns',
@@ -83,16 +83,16 @@
 				'label' => 'pw.field.columns.xl',
 				'help' => 'pw.field.columns.xl.help'
 			]
-		]);
+		]));
 
 		/* -------------- Style Tab --------------*/
-		$tabs['style'] = pwStyle::options('pwfeaturelist', $defaults);
+		pwConfig::addTab($tabs, 'style', $tabSettings['style'] ?? true, pwStyle::options('pwfeaturelist', $defaults));
 
-		/* -------------- Common Tabs (grid, spacing, theme) --------------*/
-		pwConfig::buildTabs('pwfeaturelist', $defaults, $tabSettings, $tabs);
+		/* -------------- Grid Tab --------------*/
+		pwConfig::addTab($tabs, 'grid', $tabSettings['grid'] ?? false, pwGrid::layout('pwfeaturelist', $defaults));
 
 		/* -------------- Settings Tab --------------*/
-		$tabs['settings'] = pwSettings::options('pwfeaturelist', $defaults);
+		pwConfig::addTab($tabs, 'settings', $tabSettings['settings'] ?? true, pwSettings::options('pwfeaturelist', $defaults));
 
 		/* -------------- Blueprint --------------*/
 		return [
