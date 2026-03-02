@@ -2,7 +2,7 @@
 
     /* -------------- Config --------------*/
     $config   = pwConfig::load('pwfeaturelist');
-		$settings    = $config['settings'];
+		$settings    = $config['content'];
 		$tabSettings = $config['tabs'];
 		$defaults    = $config['defaults'];
 		$fields      = $config['fields'];
@@ -83,16 +83,16 @@
 				'label' => 'pw.field.columns.xl',
 				'help' => 'pw.field.columns.xl.help'
 			]
-		]));
+		], $config['layout'] ?? []));
 
 		/* -------------- Style Tab --------------*/
-		pwConfig::addTab($tabs, 'style', $tabSettings['style'] ?? true, pwStyle::options('pwfeaturelist', $defaults));
+		pwConfig::addTab($tabs, 'style', $tabSettings['style'] ?? true, pwStyle::options('pwfeaturelist', $defaults, [], $config['style'] ?? []));
 
 		/* -------------- Grid Tab --------------*/
 		pwConfig::addTab($tabs, 'grid', $tabSettings['grid'] ?? false, pwGrid::layout('pwfeaturelist', $defaults));
 
 		/* -------------- Settings Tab --------------*/
-		pwConfig::addTab($tabs, 'settings', $tabSettings['settings'] ?? true, pwSettings::options('pwfeaturelist', $defaults));
+		pwConfig::addTab($tabs, 'settings', $tabSettings['settings'] ?? true, pwSettings::options('pwfeaturelist', $defaults, [], $config['settings'] ?? []));
 
 		/* -------------- Blueprint --------------*/
 		return [

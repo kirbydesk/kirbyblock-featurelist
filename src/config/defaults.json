@@ -1,5 +1,5 @@
 {
-  "fields": {
+  "content": {
     "align-tagline": "left",
     "align-heading": "left",
     "align-editor": "left",
@@ -10,13 +10,17 @@
     "padding-right": true,
     "padding-bottom": true,
     "padding-left": true,
-		"columns-sm": "2",
-		"columns-md": "2",
-		"columns-lg": "3",
-		"columns-xl": "5"
+    "columns-sm": "2",
+    "columns-md": "2",
+    "columns-lg": "3",
+    "columns-xl": "5",
+    "radius-top-left": false,
+    "radius-top-right": false,
+    "radius-bottom-left": false,
+    "radius-bottom-right": false
   },
   "style": {
-    "style": "default"
+    "theme": "default"
   },
   "grid": {
     "grid-size-sm": 12,
@@ -29,7 +33,7 @@
     "grid-offset-xl": 1
   },
   "settings": {
-		"block-size": "content",
+    "block-size": "content",
     "margin-top": false,
     "margin-bottom": false
   }

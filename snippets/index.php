@@ -2,11 +2,11 @@
 
 // Config
 $config   = pwConfig::load('pwfeaturelist');
-$settings = $config['settings'];
+$settings = $config['content'];
 $defaults = $config['defaults'];
 
 // Custom CSS
-if ($block->content()->style()->value() === 'custom'):
+if ($block->content()->theme()->value() === 'custom'):
 	snippet('customcss', [
 		'blockid' => 'b'.$block->id(),
 		'textcolor' => $block->content()->textcolor()->value(),
@@ -24,9 +24,13 @@ echo ' data-padding-top="'.$block->paddingtop()->value().'"';
 echo ' data-padding-right="'.$block->paddingright()->value().'"';
 echo ' data-padding-bottom="'.$block->paddingbottom()->value().'"';
 echo ' data-padding-left="'.$block->paddingleft()->value().'"';
-echo ' data-style="'.$block->style()->value().'"';
+echo ' data-radius-top-left="'.$block->radiustopleft()->value().'"';
+echo ' data-radius-top-right="'.$block->radiustopright()->value().'"';
+echo ' data-radius-bottom-right="'.$block->radiusbottomright()->value().'"';
+echo ' data-radius-bottom-left="'.$block->radiusbottomleft()->value().'"';
+echo ' data-style="'.$block->theme()->value().'"';
 echo ' data-block-size="'.$block->blocksize()->value().'"';
-e(!empty($settings['buttons']) && $block->content()->style()->value() === 'custom' && $block->buttonstyle()->value() === 'variant', ' data-button-style="variant"');
+e(!empty($settings['buttons']) && $block->content()->theme()->value() === 'custom' && $block->buttonstyle()->value() === 'variant', ' data-button-style="variant"');
 echo $block->fragment()->isNotEmpty() ? ' id="'.$block->fragment()->value().'"' : '';
 echo '>'."\n";
 
