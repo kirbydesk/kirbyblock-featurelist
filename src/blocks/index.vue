@@ -23,26 +23,28 @@
 				:data-paddingleft="content.paddingleft === true ? 'true' : null"
 				>
 
-				<!-- Tagline -->
-				<pwTagline v-if="settings.tagline" :value="content.tagline" :alignDefault="fieldDefaults['align-tagline']" />
+				<div class="contents">
 
-				<!-- Heading -->
-				<pwHeading v-if="settings.heading" :value="content.heading" :data-level="content.level" :alignDefault="fieldDefaults['align-heading']" />
+					<!-- Tagline -->
+					<pwTagline v-if="settings.tagline" :value="content.tagline" :alignDefault="fieldDefaults['align-tagline']" />
 
-				<!-- Editor -->
-				<pwEditor v-if="settings.editor" :content="content" :alignDefault="fieldDefaults['align-editor']" />
+					<!-- Heading -->
+					<pwHeading v-if="settings.heading" :value="content.heading" :data-level="content.level" :alignDefault="fieldDefaults['align-heading']" />
 
-				<!-- Blocks -->
-				<div v-if="blockItems.length" class="pwItems" :data-align="content.blocksalignment || fieldDefaults['align-blocks']">
-					<div v-for="item in blockItems" :key="item.id" class="pwItem" :class="{'ishidden': item.isHidden}">
-						<div v-if="item.content.icon" class="pwIcon" v-html="item.content.icon"></div>
-						<div class="pwContent">
-							<div class="pwHeading" v-if="item.content.heading">{{ item.content.heading }}</div>
-							<div class="pwText" v-if="item.content.description" v-html="item.content.description"></div>
+					<!-- Editor -->
+					<pwEditor v-if="settings.editor" :content="content" :alignDefault="fieldDefaults['align-editor']" />
+
+					<!-- Blocks -->
+					<div v-if="blockItems.length" class="pwItems" :data-align="content.blocksalignment || fieldDefaults['align-blocks']">
+						<div v-for="item in blockItems" :key="item.id" class="pwItem" :class="{'ishidden': item.isHidden}">
+							<div v-if="item.content.icon" class="pwIcon" v-html="item.content.icon"></div>
+							<div class="pwContent">
+								<div class="pwHeading" v-if="item.content.heading">{{ item.content.heading }}</div>
+								<div class="pwText" v-if="item.content.description" v-html="item.content.description"></div>
+							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -95,7 +97,6 @@ export default {
 
 <style scoped>
 div.pwItems {
-	padding: var(--spacing-4) 0;
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing-6);
@@ -104,6 +105,7 @@ div.pwItems {
 		display: flex;
 		gap: var(--spacing-4);
 		align-items: flex-start;
+		font-size: var(--text-sm);
 
 		div.pwIcon {
 			flex-shrink: 0;
@@ -111,13 +113,11 @@ div.pwItems {
 		}
 		div.pwHeading {
 			font-weight: var(--font-bold);
-    	font-size: var(--text-md);
 			margin-bottom: var(--spacing-1);
 			color: var(--pw-color-heading, inherit);
 		}
 		div.pwText {
-			font-size: var(--text-sm);
-			line-height: 1.2rem;
+			line-height: 1.3rem;
 			opacity: 0.8;
 			word-break: break-word;
 			overflow-wrap: anywhere;

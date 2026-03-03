@@ -35,16 +35,14 @@ div.item {
   gap: var(--spacing-4);
 	padding: var(--spacing-2);
   flex-wrap: nowrap;
-  font-weight: var(--font-normal);
+	font-size: var(--text-sm);
 
   div.pwIcon {
-    display: flex;
     flex: 0 0 60px;
-    align-items: center;
+    align-self: flex-start;
 
     div {
       width: 50px;
-      margin: auto;
     }
 		:deep(svg) {
 			width: 50px;
@@ -56,12 +54,10 @@ div.item {
 
   div.pwHeading {
     font-weight: var(--font-bold);
-    font-size: var(--text-md);
     padding: var(--spacing-1) 0;
   }
 
 	div.pwText {
-		font-size: var(--text-sm);
 		line-height: 1.2rem;
 		opacity: 0.8;
 		word-break: break-word;
