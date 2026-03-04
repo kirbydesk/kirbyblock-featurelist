@@ -1,19 +1,19 @@
 {
   "content": {
-    "align-tagline": "left",
-    "align-heading": "left",
-    "align-editor": "left",
-    "align-blocks": "left"
+    "tagline": { "align": "left" },
+    "heading": { "align": "left", "level": "h2", "size": "lg" },
+    "editor":  { "align": "left", "size": "normal", "mode": "textarea" },
+    "blocks":  { "align": "left" }
   },
   "layout": {
     "padding-top": true,
     "padding-right": true,
     "padding-bottom": true,
     "padding-left": true,
-    "columns-sm": "2",
-    "columns-md": "2",
+    "columns-sm": "3",
+    "columns-md": "3",
     "columns-lg": "3",
-    "columns-xl": "5",
+    "columns-xl": "3",
     "radius-top-left": false,
     "radius-top-right": false,
     "radius-bottom-left": false,
