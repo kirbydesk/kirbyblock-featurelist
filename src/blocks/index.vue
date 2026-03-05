@@ -96,36 +96,6 @@ export default {
 </script>
 
 <style scoped>
-div.pwItems {
-	display: flex;
-	flex-direction: column;
-	gap: var(--spacing-6);
-
-	div.pwItem {
-		display: flex;
-		gap: var(--spacing-4);
-		align-items: flex-start;
-		font-size: var(--text-sm);
-
-		div.pwIcon {
-			flex-shrink: 0;
-			color: var(--pw-color-text, inherit);
-		}
-		div.pwHeading {
-			font-weight: var(--font-bold);
-			margin-bottom: var(--spacing-1);
-			color: var(--pw-color-heading, inherit);
-		}
-		div.pwText {
-			line-height: 1.3rem;
-			opacity: 0.8;
-			word-break: break-word;
-			overflow-wrap: anywhere;
-			color: var(--pw-color-text, inherit);
-		}
-	}
-}
-
 div.pwIcon :deep(svg) {
 	width: 50px;
 	height: 50px;

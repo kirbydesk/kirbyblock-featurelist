@@ -3,7 +3,6 @@
 // Config
 $config   = pwConfig::load('pwfeaturelist');
 $settings = $config['content'];
-$defaults = $config['defaults'];
 
 // Custom CSS
 if ($block->content()->theme()->value() === 'custom'):
@@ -73,31 +72,31 @@ if ($items->count() > 0):
 	echo ' data-columns-xl="'.$block->columnsxl()->value().'"';
 	echo ' data-align="'.$block->blocksalignment()->value().'"';
 	echo '>'."\n";
+
 	foreach ($items as $item):
 
 		echo '<div data-block="item">'."\n";
 
-		// Icon
-		if ($item->icon()->isNotEmpty()):
-			echo '<div data-field="icon">'.$item->icon()->value().'</div>';
-		endif;
+			// Icon
+			if ($item->icon()->isNotEmpty()):
+				echo '<div data-field="icon">'.$item->icon()->value().'</div>';
+			endif;
 
-		// Content
-		echo '<div data-field="content">'."\n";
+			// Content
+			echo '<div data-field="content">'."\n";
 
-		// Heading
-		echo '<div data-field="heading" data-align="'.$block->blocksalignment()->value().'">'.$item->heading()->value().'</div>';
+				// Heading
+				echo '<div data-field="heading" data-align="'.$block->blocksalignment()->value().'">'.$item->heading()->value().'</div>';
 
-		// Description
-		echo '<div data-field="text" data-opacity="dimmed" data-align="'.$block->blocksalignment()->value().'">'.$item->description()->value().'</div>';
+				// Description
+				echo '<div data-field="text" data-opacity="dimmed" data-align="'.$block->blocksalignment()->value().'">'.$item->description()->value().'</div>';
 
-		echo '</div>'."\n"; // End Content
-
-		echo '</div>'."\n";
+			echo '</div>'."\n"; // End Content
+		echo '</div>'."\n"; // End Item
 	endforeach;
 
-	echo '</div>'."\n";
-endif; // End Items
+	echo '</div>'."\n"; // End Items
+endif;
 
 echo '</div></div>'."\n"; // End Grid
 echo '</section>'."\n";

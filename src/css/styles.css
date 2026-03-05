@@ -36,7 +36,7 @@ section[data-block="featurelist"] {
 
 	/* -------------- Items--------------*/
 	div[data-block="items"] {
-		div[data-block="item"] {
+		[data-block="item"] {
 			display: flex;
 			flex-direction: row;
 			gap: 1rem;
@@ -70,7 +70,7 @@ section[data-block="featurelist"] {
 		gap: 1.5rem;
 		margin-bottom: 1.5rem;
 
-		div[data-block="item"] {
+		[data-block="item"] {
 			margin-bottom: 0;
 		}
 	}
