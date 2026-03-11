@@ -6,10 +6,10 @@
     "blocks":  { "align": "left" }
   },
   "layout": {
-    "padding-top": "large",
-    "padding-right": "large",
-    "padding-bottom": true,
+    "padding-top": "small",
+    "padding-bottom": "small",
     "padding-left": true,
+    "padding-right": true,
     "columns-sm": "3",
     "columns-md": "3",
     "columns-lg": "3",
