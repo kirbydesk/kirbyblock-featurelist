@@ -6,8 +6,8 @@
     "blocks":  { "align": "left" }
   },
   "layout": {
-    "padding-top": "small",
-    "padding-bottom": "small",
+    "padding-top": "large",
+    "padding-bottom": "large",
     "padding-left": true,
     "padding-right": true,
     "columns-sm": "3",
