@@ -36,6 +36,8 @@
 				'sizeOptions'  => $fieldOptions['heading']['sizes'] ?? null,
 				'alignOptions' => $fieldOptions['heading']['align'] ?? null,
 				'levelOptions' => $fieldOptions['heading']['level'] ?? null,
+				'textbackground'        => $fields['textbackground-heading'] ?? null,
+				'textbackgroundOptions' => $fieldOptions['heading']['textbackground'] ?? null,
 			];
 		}
 		/* -------------- Editor --------------*/
