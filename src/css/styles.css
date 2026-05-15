@@ -1,4 +1,16 @@
 /* DO NOT MODIFY THIS FILE - Override in site/patches/css/kirbyblock-featurelist/_styles.css */
+
+/* Per-theme icon fill (overrides pagewizard's global --element-icon-fill) */
+section[data-block="featurelist"] [data-field="icon"] svg {
+	fill: var(--pwfeaturelist-item-icon-fill);
+}
+section[data-block="featurelist"][data-style="variant"] [data-field="icon"] svg {
+	fill: var(--pwfeaturelist-item-icon-fill-variant);
+}
+section[data-block="featurelist"][data-style="variant2"] [data-field="icon"] svg {
+	fill: var(--pwfeaturelist-item-icon-fill-variant2);
+}
+
 section[data-block="featurelist"] {
 
 	/* -------------- Tagline Margins--------------*/

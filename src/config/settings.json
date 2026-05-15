@@ -5,6 +5,13 @@
 		"grid": true,
 		"settings": true
 	},
+	"values": {
+		"items": {
+			"colors": {
+				"item-icon-fill": { "default": "#1D548B", "variant": "#1D548B", "variant2": "#8CBAE7" }
+			}
+		}
+	},
 	"fields": {
 		"content": {
 			"tagline": {
