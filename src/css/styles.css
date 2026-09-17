@@ -149,3 +149,10 @@ section[data-block="featurelist"] {
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="5"] { grid-template-columns: repeat(5, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="6"] { grid-template-columns: repeat(6, 1fr); }
 }
+
+
+/* -------------- Variant 3 (mirror of variant2) --------------*/
+section[data-block="featurelist"][data-style="variant3"] [data-field="icon"] svg {
+	fill: var(--pwfeaturelist-item-icon-fill-variant3);
+}
+
