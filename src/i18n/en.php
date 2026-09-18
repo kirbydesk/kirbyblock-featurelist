@@ -1,6 +1,7 @@
 <?php return array(
 
 	'kirbyblock-featurelist.name' => 'Feature List',
+	'kirbyblock-featurelist.ai' => 'A list of features or benefits, each with a short title and description. Use it for advantages, characteristics or what someone gets.',
 	'kirbyblock-featurelist.item' => 'Feature',
 	'kirbyblock-featurelist.item.heading' => 'Feature',
 	'kirbyblock-featurelist.item.heading.help' => 'Add a title for this feature.',
