@@ -13,6 +13,105 @@
 					"variant": "#1D548B",
 					"variant2": "#8CBAE7",
 					"variant3": "#8CBAE7"
+				},
+				"item-icon-tile-background": {
+					"default": "#1D548B",
+					"variant": "#1D548B",
+					"variant2": "#FFFFFF",
+					"variant3": "#FFFFFF"
+				}
+			},
+			"vars": {
+				"item-icon-size": {
+					"default": "2.5rem",
+					"lg": "2.5rem",
+					"xl": "2.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0.5,
+					"max": 10
+				},
+				"item-icon-gap": {
+					"value": "1rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"item-icon-tile-padding": {
+					"value": "0.6rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0,
+					"max": 4
+				},
+				"item-title-size": {
+					"default": "1.25rem",
+					"lg": "1.25rem",
+					"xl": "1.25rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 10
+				},
+				"item-title-line-height": {
+					"default": "1.3",
+					"lg": "1.3",
+					"xl": "1.3",
+					"unit": "",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 3
+				},
+				"item-text-size": {
+					"default": "1rem",
+					"lg": "1rem",
+					"xl": "1rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 4
+				},
+				"item-title-gap": {
+					"value": "0.2rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0,
+					"max": 4
+				},
+				"item-gap": {
+					"default": "1.5rem",
+					"lg": "2.5rem",
+					"xl": "2.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 8
+				},
+				"item-radius": {
+					"label": "kirbyblock-featurelist.item-radius",
+					"value": [
+						"0.5rem",
+						"0.5rem",
+						"0.5rem",
+						"0.5rem"
+					],
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 20,
+					"suffixes": [
+						"-top-left",
+						"-top-right",
+						"-bottom-left",
+						"-bottom-right"
+					],
+					"labels": [
+						"pw.option.top-left",
+						"pw.option.top-right",
+						"pw.option.bottom-left",
+						"pw.option.bottom-right"
+					]
 				}
 			}
 		}
@@ -173,6 +272,36 @@
 			},
 			"radius-bottom-right": {
 				"default": false
+			},
+			"item-icon-position": {
+				"options": [
+					"left",
+					"top"
+				],
+				"default": "left"
+			},
+			"item-icon-style": {
+				"options": [
+					"plain",
+					"tile"
+				],
+				"default": "plain"
+			},
+			"item-title-style": {
+				"options": [
+					"above",
+					"inline"
+				],
+				"default": "above"
+			},
+			"item-shape": {
+				"label": "kirbyblock-featurelist.item-shape",
+				"options": [
+					"square",
+					"round",
+					"custom"
+				],
+				"default": "custom"
 			}
 		},
 		"style": {
@@ -186,6 +315,14 @@
 				],
 				"required": true,
 				"default": "default"
+			},
+			"section-layout": {
+				"options": [
+					"stacked",
+					"split"
+				],
+				"default": "stacked",
+				"required": true
 			}
 		},
 		"grid": {
