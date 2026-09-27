@@ -1,6 +1,6 @@
 /* DO NOT MODIFY THIS FILE - Override in site/patches/css/kirbyblock-featurelist/_styles.css */
 
-/* Per-theme icon fill (overrides pagewizard's global --element-icon-fill) */
+/* Per-theme icon fill */
 section[data-block="featurelist"] [data-field="icon"] svg {
 	fill: var(--pwfeaturelist-item-icon-fill);
 }
