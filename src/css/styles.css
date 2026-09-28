@@ -12,28 +12,14 @@ section[data-block="featurelist"][data-style="variant2"] [data-field="icon"] svg
 }
 
 section[data-block="featurelist"] {
-
 	/* -------------- Tagline Margins--------------*/
 	[data-field="tagline"] {
-		+ [data-field="heading"] {
-			margin-top: 0.5rem;
-		}
-		+ [data-field="textarea"],
-		+ [data-field="writer"],
-		+ [data-field="markdown"] {
-			margin-top: 0.3rem;
-		}
 		+ [data-block="items"] {
 			margin-top: 1rem;
 		}
 	}
 	/* -------------- Heading Margins--------------*/
 	[data-field="heading"] {
-		+ [data-field="textarea"],
-		+ [data-field="writer"],
-		+ [data-field="markdown"] {
-			margin-top: 0.5rem;
-		}
 		+ [data-block="items"] {
 			margin-top: 1.2rem;
 		}
@@ -197,7 +183,6 @@ section[data-block="featurelist"] {
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="5"] { grid-template-columns: repeat(5, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="6"] { grid-template-columns: repeat(6, 1fr); }
 }
-
 
 /* -------------- Variant 3 (mirror of variant2) --------------*/
 section[data-block="featurelist"][data-style="variant3"] [data-field="icon"] svg {
