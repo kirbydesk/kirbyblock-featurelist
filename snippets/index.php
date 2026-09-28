@@ -58,8 +58,8 @@ if ($items->count() > 0):
 
 		echo '<div data-block="item">'."\n";
 
-			// Icon
-			if ($item->icon()->isNotEmpty()):
+			// Icon (none when the icon position is "none")
+			if ($iconPosition !== 'none' && $item->icon()->isNotEmpty()):
 				echo '<div data-field="icon">'.$item->icon()->value().'</div>';
 			endif;
 

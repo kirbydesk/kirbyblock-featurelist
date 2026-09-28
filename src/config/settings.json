@@ -284,6 +284,7 @@
 			},
 			"item-icon-position": {
 				"options": [
+					"none",
 					"left",
 					"top"
 				],
