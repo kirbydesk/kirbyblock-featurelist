@@ -43,7 +43,7 @@
 						:data-icon-position="defaults['item-icon-position'] || 'left'"
 						:data-title-style="defaults['item-title-style'] || 'above'">
 						<div v-for="item in blockItems" :key="item.id" class="pwFeature" :class="{'ishidden': item.isHidden}">
-							<div v-if="item.content.icon" class="pwIcon" :style="iconStyle" v-html="item.content.icon"></div>
+							<div v-if="item.content.icon && defaults['item-icon-position'] !== 'none'" class="pwIcon" :style="iconStyle" v-html="item.content.icon"></div>
 							<div class="pwContent">
 								<template v-if="(defaults['item-title-style'] || 'above') === 'inline'">
 									<div class="pwText"><strong v-if="item.content.heading">{{ item.content.heading }}. </strong><span v-html="plainText(item.content.description)"></span></div>

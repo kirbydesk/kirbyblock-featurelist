@@ -58,5 +58,14 @@ return [
 		];
 	}),
 
-	'blocks/pwfeaturelistitem' => \Kirby\Data\Data::read(__DIR__ . '/../blueprints/item.yml'),
+	// the item; with icons set to "none" (Project Wizard → Design) its style
+	// tab (only the icon) is left out
+	'blocks/pwfeaturelistitem' => function () {
+		$item     = \Kirby\Data\Data::read(__DIR__ . '/../blueprints/item.yml');
+		$defaults = pwConfig::load('pwfeaturelist')['defaults'] ?? [];
+		if (($defaults['item-icon-position'] ?? 'left') === 'none') {
+			unset($item['tabs']['style']);
+		}
+		return $item;
+	},
 ];
