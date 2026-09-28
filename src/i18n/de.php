@@ -36,7 +36,7 @@
 	'pw.option.plain' => 'Ohne Hintergrund',
 	'pw.option.tile' => 'Kachel',
 	'pw.option.above' => 'Über dem Text',
-	'pw.option.inline' => 'Im Text',
+	'pw.option.inline' => 'Inline',
 	'prw.prop.item-icon-size' => 'Icon-Größe',
 	'prw.prop.item-icon-gap' => 'Abstand Icon – Inhalt',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand der Kachel',

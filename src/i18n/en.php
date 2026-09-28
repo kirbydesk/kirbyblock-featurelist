@@ -36,7 +36,7 @@
 	'pw.option.plain' => 'No background',
 	'pw.option.tile' => 'Tile',
 	'pw.option.above' => 'Above the text',
-	'pw.option.inline' => 'In the text',
+	'pw.option.inline' => 'Inline',
 	'prw.prop.item-icon-size' => 'Icon Size',
 	'prw.prop.item-icon-gap' => 'Icon – Content Gap',
 	'prw.prop.item-icon-tile-padding' => 'Tile Padding',
