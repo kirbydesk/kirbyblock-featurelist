@@ -225,6 +225,7 @@
 				}
 			},
 			"blocks": {
+				"locked": true,
 				"align": {
 					"default": "left"
 				}
