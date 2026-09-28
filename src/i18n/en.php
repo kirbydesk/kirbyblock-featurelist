@@ -32,7 +32,7 @@
 	'kirbyblock-featurelist.item-radius' => 'Tile Corner Radius',
 	'pw.field.shape' => 'Shape',
 	'pw.option.square' => 'Square',
-	'pw.field.title-style' => 'Title',
+	'pw.field.title-style' => 'Arrangement',
 	'pw.option.plain' => 'No background',
 	'pw.option.tile' => 'Tile',
 	'pw.option.above' => 'Above the text',

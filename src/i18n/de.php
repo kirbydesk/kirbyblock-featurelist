@@ -32,7 +32,7 @@
 	'kirbyblock-featurelist.item-radius' => 'Kachel-Eckenradius',
 	'pw.field.shape' => 'Form',
 	'pw.option.square' => 'Eckig',
-	'pw.field.title-style' => 'Titel',
+	'pw.field.title-style' => 'Anordnung',
 	'pw.option.plain' => 'Ohne Hintergrund',
 	'pw.option.tile' => 'Kachel',
 	'pw.option.above' => 'Über dem Text',
