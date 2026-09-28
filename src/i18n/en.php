@@ -38,7 +38,7 @@
 	'pw.option.above' => 'Paragraph',
 	'pw.option.inline' => 'Run-in',
 	'prw.prop.item-icon-size' => 'Size',
-	'prw.prop.item-icon-gap' => 'Icon – Content Gap',
+	'prw.prop.item-icon-gap' => 'Gap to the content',
 	'prw.prop.item-icon-tile-padding' => 'Tile Padding',
 	'prw.prop.item-icon-tile-background' => 'Tile colour',
 	'prw.prop.item-title-size' => 'Title Size',

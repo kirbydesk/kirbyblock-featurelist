@@ -38,7 +38,7 @@
 	'pw.option.above' => 'Absatz',
 	'pw.option.inline' => 'Fließtext',
 	'prw.prop.item-icon-size' => 'Größe',
-	'prw.prop.item-icon-gap' => 'Abstand Icon – Inhalt',
+	'prw.prop.item-icon-gap' => 'Abstand zum Inhalt',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand der Kachel',
 	'prw.prop.item-icon-tile-background' => 'Kachelfarbe',
 	'prw.prop.item-title-size' => 'Schriftgröße Titel',
