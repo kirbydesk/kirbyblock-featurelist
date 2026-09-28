@@ -36,7 +36,7 @@
 	'pw.option.plain' => 'Ohne Hintergrund',
 	'pw.option.tile' => 'Kachel',
 	'pw.option.above' => 'Absatz',
-	'pw.option.inline' => 'Im Fließtext',
+	'pw.option.inline' => 'Fließtext',
 	'prw.prop.item-icon-size' => 'Icon-Größe',
 	'prw.prop.item-icon-gap' => 'Abstand Icon – Inhalt',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand der Kachel',
