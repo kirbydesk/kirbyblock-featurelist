@@ -135,6 +135,27 @@
 						"pw.option.bottom-left",
 						"pw.option.bottom-right"
 					]
+				},
+				"tagline-spacing": {
+					"value": "0.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"heading-spacing": {
+					"value": "0.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"editor-spacing": {
+					"value": "1.2rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
 				}
 			}
 		}
@@ -344,6 +365,14 @@
 					"custom"
 				],
 				"default": "custom"
+			},
+			"item-spacing": {
+				"label": "pw.field.item-spacing",
+				"options": [
+					"global",
+					"own"
+				],
+				"default": "global"
 			}
 		},
 		"style": {
