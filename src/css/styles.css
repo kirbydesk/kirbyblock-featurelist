@@ -42,6 +42,11 @@ section[data-block="featurelist"] {
 			align-items: flex-start;
 			margin-bottom: var(--pwfeaturelist-item-gap);
 
+			/* the gap only between the features, not below the last one */
+			&:last-child {
+				margin-bottom: 0;
+			}
+
 			div[data-field="icon"] {
 				flex-shrink: 0;
 				display: flex;
@@ -128,7 +133,6 @@ section[data-block="featurelist"] {
 	section[data-block="featurelist"] div[data-block="items"] {
 		display: grid;
 		gap: var(--pwfeaturelist-item-gap);
-		margin-bottom: var(--pwfeaturelist-item-gap);
 
 		[data-block="item"] {
 			margin-bottom: 0;
@@ -146,7 +150,6 @@ section[data-block="featurelist"] {
 @media (min-width: 768px) {
 	section[data-block="featurelist"] div[data-block="items"] {
 		gap: var(--pwfeaturelist-item-gap);
-		margin-bottom: var(--pwfeaturelist-item-gap);
 	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-md="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-md="2"] { grid-template-columns: repeat(2, 1fr); }
@@ -160,7 +163,6 @@ section[data-block="featurelist"] {
 @media (min-width: 1024px) {
 	section[data-block="featurelist"] div[data-block="items"] {
 		gap: var(--pwfeaturelist-item-gap);
-		margin-bottom: var(--pwfeaturelist-item-gap);
 	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-lg="2"] { grid-template-columns: repeat(2, 1fr); }
@@ -174,7 +176,6 @@ section[data-block="featurelist"] {
 @media (min-width: 1280px) {
 	section[data-block="featurelist"] div[data-block="items"] {
 		gap: var(--pwfeaturelist-item-gap);
-		margin-bottom: var(--pwfeaturelist-item-gap);
 	}
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="1"] { grid-template-columns: repeat(1, 1fr); }
 	section[data-block="featurelist"] div[data-block="items"][data-columns-xl="2"] { grid-template-columns: repeat(2, 1fr); }
