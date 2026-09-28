@@ -25,7 +25,7 @@
 	'pw.option.split' => 'Two columns',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
-	'pw.field.icon-position' => 'Icon Position',
+	'pw.field.icon-position' => 'Icons',
 	'pw.field.icon-style' => 'Icon Style',
 	'kirbyblock-featurelist.item-shape' => 'Tile Shape',
 	'kirbyblock-featurelist.item-text-gap' => 'Gap to the text',

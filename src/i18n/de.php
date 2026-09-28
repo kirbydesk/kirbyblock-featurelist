@@ -25,7 +25,7 @@
 	'pw.option.split' => 'Zweispaltig',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
-	'pw.field.icon-position' => 'Icon-Position',
+	'pw.field.icon-position' => 'Icons',
 	'pw.field.icon-style' => 'Icon-Stil',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
 	'kirbyblock-featurelist.item-text-gap' => 'Abstand zum Text',
