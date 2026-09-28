@@ -136,6 +136,10 @@ section[data-block="featurelist"] {
 			margin-top: 0;
 		}
 	}
+	/* the intro centred to the features (Project Wizard → Design → Gaps) */
+	section[data-block="featurelist"][data-layout-style="split"][data-offset-align="center"] [data-layout="grid-item"] {
+		align-items: center;
+	}
 }
 
 /* Columns - Small (from 640px) */

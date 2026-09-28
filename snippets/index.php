@@ -10,13 +10,14 @@ $sectionLayout = $block->sectionlayout()->or($defaults['section-layout'] ?? 'sta
 $iconPosition  = $defaults['item-icon-position'] ?? 'left';
 $iconStyle     = $defaults['item-icon-style'] ?? 'plain';
 $iconAlign     = $defaults['item-icon-align'] ?? 'top';
+$offsetAlign   = $defaults['item-offset-align'] ?? 'top';
 $titleStyle    = $defaults['item-title-style'] ?? 'above';
 
 // Custom Background
 pwSnippet::customCss($block);
 
 // Section + Grid open
-echo pwSnippet::sectionOpen('featurelist', $block, $settings, ' data-layout-style="'.$sectionLayout.'"');
+echo pwSnippet::sectionOpen('featurelist', $block, $settings, ' data-layout-style="'.$sectionLayout.'" data-offset-align="'.$offsetAlign.'"');
 echo pwSnippet::gridOpen($block);
 
 // Split layout: intro (tagline, heading, text) in its own column next to the items

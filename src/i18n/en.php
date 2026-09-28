@@ -30,6 +30,7 @@
 	'kirbyblock-featurelist.item-shape' => 'Tile Shape',
 	'kirbyblock-featurelist.item-text-gap' => 'Gap to the intro',
 	'kirbyblock-featurelist.item-offset-gap' => 'Offset',
+	'kirbyblock-featurelist.item-offset-align' => 'Alignment',
 	'kirbyblock-featurelist.item-radius' => 'Tile Corner Radius',
 	'pw.field.shape' => 'Shape',
 	'pw.option.square' => 'Square',

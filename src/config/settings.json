@@ -305,6 +305,14 @@
 				],
 				"default": "left"
 			},
+			"item-offset-align": {
+				"label": "kirbyblock-featurelist.item-offset-align",
+				"options": [
+					"top",
+					"center"
+				],
+				"default": "top"
+			},
 			"item-icon-align": {
 				"label": "kirbyblock-featurelist.item-icon-align",
 				"options": [
