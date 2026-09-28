@@ -17,12 +17,12 @@
 
 	/* -------------- Layout --------------*/
 	'kirbyblock-featurelist.section-layout' => 'Layout',
-	'kirbyblock-featurelist.section-layout.help' => 'Standard: Tagline, Überschrift und Text stehen über den Features. Zweispaltig: Sie stehen links, die Features rechts daneben (ab 1024 px).',
+	'kirbyblock-featurelist.section-layout.help' => 'Standard: Tagline, Überschrift und Text stehen über den Features. Eingerückt: Sie stehen links, die Features eingerückt rechts daneben (ab 1024 px).',
 	'kirbyblock-featurelist.section-layout.stacked' => 'Standard',
-	'kirbyblock-featurelist.section-layout.split' => 'Zweispaltig',
+	'kirbyblock-featurelist.section-layout.split' => 'Eingerückt',
 	'prw.property.section-layout' => 'Layout',
 	'pw.option.stacked' => 'Standard',
-	'pw.option.split' => 'Zweispaltig',
+	'pw.option.split' => 'Eingerückt',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',

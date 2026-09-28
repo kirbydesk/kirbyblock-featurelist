@@ -17,12 +17,12 @@
 
 	/* -------------- Layout --------------*/
 	'kirbyblock-featurelist.section-layout' => 'Layout',
-	'kirbyblock-featurelist.section-layout.help' => 'Default: tagline, heading and text above the features. Two columns: they sit on the left, the features on the right (from 1024px).',
+	'kirbyblock-featurelist.section-layout.help' => 'Default: tagline, heading and text above the features. Offset: they sit on the left, the features offset to the right (from 1024px).',
 	'kirbyblock-featurelist.section-layout.stacked' => 'Default',
-	'kirbyblock-featurelist.section-layout.split' => 'Two columns',
+	'kirbyblock-featurelist.section-layout.split' => 'Offset',
 	'prw.property.section-layout' => 'Layout',
 	'pw.option.stacked' => 'Default',
-	'pw.option.split' => 'Two columns',
+	'pw.option.split' => 'Offset',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',
