@@ -15,13 +15,13 @@ section[data-block="featurelist"] {
 	/* -------------- Tagline Margins--------------*/
 	[data-field="tagline"] {
 		+ [data-block="items"] {
-			margin-top: 1rem;
+			margin-top: var(--pwfeaturelist-item-text-gap);
 		}
 	}
 	/* -------------- Heading Margins--------------*/
 	[data-field="heading"] {
 		+ [data-block="items"] {
-			margin-top: 1.2rem;
+			margin-top: var(--pwfeaturelist-item-text-gap);
 		}
 	}
 	/* -------------- Texts Margins--------------*/
@@ -29,7 +29,7 @@ section[data-block="featurelist"] {
 	[data-field="writer"],
 	[data-field="markdown"] {
 		+ [data-block="items"] {
-			margin-top: 2rem;
+			margin-top: var(--pwfeaturelist-item-text-gap);
 		}
 	}
 
@@ -111,7 +111,7 @@ section[data-block="featurelist"] {
 
 	/* -------------- Split layout: intro left, items right --------------*/
 	[data-block="intro"] + [data-block="items"] {
-		margin-top: 2rem;
+		margin-top: var(--pwfeaturelist-item-text-gap);
 	}
 }
 

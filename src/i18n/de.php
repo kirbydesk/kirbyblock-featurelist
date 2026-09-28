@@ -28,6 +28,7 @@
 	'pw.field.icon-position' => 'Icon-Position',
 	'pw.field.icon-style' => 'Icon-Stil',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
+	'kirbyblock-featurelist.item-text-gap' => 'Abstand zum Text',
 	'kirbyblock-featurelist.item-radius' => 'Kachel-Eckenradius',
 	'pw.field.shape' => 'Form',
 	'pw.option.square' => 'Eckig',

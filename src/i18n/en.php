@@ -28,6 +28,7 @@
 	'pw.field.icon-position' => 'Icon Position',
 	'pw.field.icon-style' => 'Icon Style',
 	'kirbyblock-featurelist.item-shape' => 'Tile Shape',
+	'kirbyblock-featurelist.item-text-gap' => 'Gap to the text',
 	'kirbyblock-featurelist.item-radius' => 'Tile Corner Radius',
 	'pw.field.shape' => 'Shape',
 	'pw.option.square' => 'Square',

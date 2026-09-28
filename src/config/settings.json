@@ -79,6 +79,14 @@
 					"min": 0,
 					"max": 4
 				},
+				"item-text-gap": {
+					"label": "kirbyblock-featurelist.item-text-gap",
+					"value": "2rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 8
+				},
 				"item-gap": {
 					"default": "1.5rem",
 					"lg": "2.5rem",
