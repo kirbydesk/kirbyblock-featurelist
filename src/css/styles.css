@@ -128,7 +128,8 @@ section[data-block="featurelist"] {
 	section[data-block="featurelist"][data-layout-style="split"] [data-layout="grid-item"] {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		column-gap: var(--pwfeaturelist-item-gap);
+		/* the offset: the gap between the intro and the features */
+		column-gap: var(--pwfeaturelist-item-offset-gap);
 		align-items: start;
 
 		[data-block="intro"] + [data-block="items"] {

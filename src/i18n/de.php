@@ -29,6 +29,7 @@
 	'pw.field.icon-style' => 'Stil',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
 	'kirbyblock-featurelist.item-text-gap' => 'Abstand zur Einleitung',
+	'kirbyblock-featurelist.item-offset-gap' => 'Einrückung',
 	'kirbyblock-featurelist.item-radius' => 'Kachel-Eckenradius',
 	'pw.field.shape' => 'Form',
 	'pw.option.square' => 'Eckig',
