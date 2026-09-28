@@ -13,7 +13,7 @@
 
 	/* -------------- Item color labels (rendered by pw-block-values) --------------*/
 	'prw.valuegroup.items'    => 'Items',
-	'prw.prop.item-icon-fill' => 'Icon',
+	'prw.prop.item-icon-fill' => 'Colour',
 
 	/* -------------- Layout --------------*/
 	'kirbyblock-featurelist.section-layout' => 'Layout',
@@ -26,7 +26,7 @@
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',
-	'pw.field.icon-style' => 'Icon Style',
+	'pw.field.icon-style' => 'Style',
 	'kirbyblock-featurelist.item-shape' => 'Tile Shape',
 	'kirbyblock-featurelist.item-text-gap' => 'Gap to the text',
 	'kirbyblock-featurelist.item-radius' => 'Tile Corner Radius',
@@ -37,10 +37,10 @@
 	'pw.option.tile' => 'Tile',
 	'pw.option.above' => 'Paragraph',
 	'pw.option.inline' => 'Run-in',
-	'prw.prop.item-icon-size' => 'Icon Size',
+	'prw.prop.item-icon-size' => 'Size',
 	'prw.prop.item-icon-gap' => 'Icon – Content Gap',
 	'prw.prop.item-icon-tile-padding' => 'Tile Padding',
-	'prw.prop.item-icon-tile-background' => 'Tile',
+	'prw.prop.item-icon-tile-background' => 'Tile colour',
 	'prw.prop.item-title-size' => 'Title Size',
 	'prw.prop.item-title-line-height' => 'Title Line Height',
 	'prw.prop.item-text-size' => 'Text Size',

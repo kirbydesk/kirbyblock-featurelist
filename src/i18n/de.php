@@ -13,7 +13,7 @@
 
 	/* -------------- Item color labels (rendered by pw-block-values) --------------*/
 	'prw.valuegroup.items' => 'Einträge',
-	'prw.prop.item-icon-fill' => 'Icon',
+	'prw.prop.item-icon-fill' => 'Farbe',
 
 	/* -------------- Layout --------------*/
 	'kirbyblock-featurelist.section-layout' => 'Layout',
@@ -26,7 +26,7 @@
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',
-	'pw.field.icon-style' => 'Icon-Stil',
+	'pw.field.icon-style' => 'Stil',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
 	'kirbyblock-featurelist.item-text-gap' => 'Abstand zum Text',
 	'kirbyblock-featurelist.item-radius' => 'Kachel-Eckenradius',
@@ -37,10 +37,10 @@
 	'pw.option.tile' => 'Kachel',
 	'pw.option.above' => 'Absatz',
 	'pw.option.inline' => 'Fließtext',
-	'prw.prop.item-icon-size' => 'Icon-Größe',
+	'prw.prop.item-icon-size' => 'Größe',
 	'prw.prop.item-icon-gap' => 'Abstand Icon – Inhalt',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand der Kachel',
-	'prw.prop.item-icon-tile-background' => 'Kachel',
+	'prw.prop.item-icon-tile-background' => 'Kachelfarbe',
 	'prw.prop.item-title-size' => 'Schriftgröße Titel',
 	'prw.prop.item-title-line-height' => 'Zeilenhöhe Titel',
 	'prw.prop.item-text-size' => 'Schriftgröße Text',
