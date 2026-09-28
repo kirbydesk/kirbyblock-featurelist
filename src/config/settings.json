@@ -298,8 +298,8 @@
 			},
 			"item-title-style": {
 				"options": [
-					"above",
-					"inline"
+					"inline",
+					"above"
 				],
 				"default": "above"
 			},
