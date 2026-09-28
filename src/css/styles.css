@@ -87,6 +87,15 @@ section[data-block="featurelist"] {
 			flex-direction: column;
 		}
 
+		/* Icon beside the content: at the top (with a fine vertical offset)
+		   or centred to the content */
+		&[data-icon-position="left"][data-icon-align="top"] div[data-field="icon"] {
+			translate: 0 var(--pwfeaturelist-item-icon-offset);
+		}
+		&[data-icon-position="left"][data-icon-align="center"] [data-block="item"] {
+			align-items: center;
+		}
+
 		/* Icon on a coloured tile */
 		&[data-icon-style="tile"] div[data-field="icon"] {
 			padding: var(--pwfeaturelist-item-icon-tile-padding);

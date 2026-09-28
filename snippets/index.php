@@ -9,6 +9,7 @@ $defaults = $config['defaults'];
 $sectionLayout = $block->sectionlayout()->or($defaults['section-layout'] ?? 'stacked')->value();
 $iconPosition  = $defaults['item-icon-position'] ?? 'left';
 $iconStyle     = $defaults['item-icon-style'] ?? 'plain';
+$iconAlign     = $defaults['item-icon-align'] ?? 'top';
 $titleStyle    = $defaults['item-title-style'] ?? 'above';
 
 // Custom Background
@@ -49,6 +50,7 @@ if ($items->count() > 0):
 	echo ' data-columns-xl="'.$block->columnsxl()->value().'"';
 	echo ' data-align="'.$block->blocksalignment()->value().'"';
 	echo ' data-icon-position="'.$iconPosition.'"';
+	echo ' data-icon-align="'.$iconAlign.'"';
 	echo ' data-icon-style="'.$iconStyle.'"';
 	echo ' data-shape="'.($defaults['item-shape'] ?? 'custom').'"';
 	echo ' data-title-style="'.$titleStyle.'"';

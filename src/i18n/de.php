@@ -39,6 +39,8 @@
 	'pw.option.inline' => 'Fließtext',
 	'prw.prop.item-icon-size' => 'Größe',
 	'prw.prop.item-icon-gap' => 'Abstand zum Inhalt',
+	'kirbyblock-featurelist.item-icon-align' => 'Ausrichtung',
+	'prw.prop.item-icon-offset' => 'Vertikaler Versatz',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand der Kachel',
 	'prw.prop.item-icon-tile-background' => 'Kachelfarbe',
 	'prw.prop.item-title-size' => 'Schriftgröße Titel',

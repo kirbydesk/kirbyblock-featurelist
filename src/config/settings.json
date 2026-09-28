@@ -31,6 +31,13 @@
 					"min": 0.5,
 					"max": 10
 				},
+				"item-icon-offset": {
+					"value": "0rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": -4,
+					"max": 4
+				},
 				"item-icon-gap": {
 					"value": "1rem",
 					"unit": "rem",
@@ -289,6 +296,14 @@
 					"top"
 				],
 				"default": "left"
+			},
+			"item-icon-align": {
+				"label": "kirbyblock-featurelist.item-icon-align",
+				"options": [
+					"top",
+					"center"
+				],
+				"default": "top"
 			},
 			"item-icon-style": {
 				"options": [

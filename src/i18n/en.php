@@ -39,6 +39,8 @@
 	'pw.option.inline' => 'Run-in',
 	'prw.prop.item-icon-size' => 'Size',
 	'prw.prop.item-icon-gap' => 'Gap to the content',
+	'kirbyblock-featurelist.item-icon-align' => 'Alignment',
+	'prw.prop.item-icon-offset' => 'Vertical offset',
 	'prw.prop.item-icon-tile-padding' => 'Tile Padding',
 	'prw.prop.item-icon-tile-background' => 'Tile colour',
 	'prw.prop.item-title-size' => 'Title Size',
