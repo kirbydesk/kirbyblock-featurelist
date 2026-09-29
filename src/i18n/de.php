@@ -26,7 +26,7 @@
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',
-	'pw.field.icon-style' => 'Kachel',
+	'pw.field.icon-style' => 'Hintergrund',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
 	'kirbyblock-featurelist.item-text-gap' => 'Abstand zur Einleitung',
 	'kirbyblock-featurelist.item-offset-gap' => 'Einrückung',

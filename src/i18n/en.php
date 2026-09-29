@@ -26,7 +26,7 @@
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',
-	'pw.field.icon-style' => 'Tile',
+	'pw.field.icon-style' => 'Background',
 	'kirbyblock-featurelist.item-shape' => 'Tile Shape',
 	'kirbyblock-featurelist.item-text-gap' => 'Gap to the intro',
 	'kirbyblock-featurelist.item-offset-gap' => 'Offset',
