@@ -13,7 +13,7 @@
 
 	/* -------------- Item color labels (rendered by pw-block-values) --------------*/
 	'prw.valuegroup.items' => 'Einträge',
-	'prw.prop.item-icon-fill' => 'Farbe',
+	'prw.prop.item-icon-fill' => 'Icon',
 
 	/* -------------- Layout --------------*/
 	'kirbyblock-featurelist.section-layout' => 'Layout',
@@ -26,7 +26,7 @@
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Icons',
-	'pw.field.icon-style' => 'Stil',
+	'pw.field.icon-style' => 'Kachel',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
 	'kirbyblock-featurelist.item-text-gap' => 'Abstand zur Einleitung',
 	'kirbyblock-featurelist.item-offset-gap' => 'Einrückung',
@@ -35,8 +35,8 @@
 	'pw.field.shape' => 'Form',
 	'pw.option.square' => 'Eckig',
 	'pw.field.title-style' => 'Anordnung',
-	'pw.option.plain' => 'Ohne Hintergrund',
-	'pw.option.tile' => 'Kachel',
+	'pw.option.plain' => 'Ohne',
+	'pw.option.tile' => 'Mit',
 	'pw.option.above' => 'Absatz',
 	'pw.option.inline' => 'Fließtext',
 	'prw.prop.item-icon-size' => 'Größe',
@@ -44,7 +44,7 @@
 	'kirbyblock-featurelist.item-icon-align' => 'Ausrichtung',
 	'prw.prop.item-icon-offset' => 'Vertikaler Versatz',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand der Kachel',
-	'prw.prop.item-icon-tile-background' => 'Kachelfarbe',
+	'prw.prop.item-icon-tile-background' => 'Kachel',
 	'prw.prop.item-title-size' => 'Schriftgröße Titel',
 	'prw.prop.item-title-line-height' => 'Zeilenhöhe Titel',
 	'prw.prop.item-text-size' => 'Schriftgröße Text',
