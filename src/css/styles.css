@@ -62,12 +62,10 @@ section[data-block="featurelist"] {
 				   block's own values when switched on, see pagewizard) */
 				div[data-field="text"]{
 					ul {
-						margin: .5rem 0 0;
 						list-style: disc;
 						padding-left: 1.3em;
 					}
 					ol {
-						margin: .5rem 0 0;
 						list-style: decimal;
 						padding-left: 1.3em;
 					}
