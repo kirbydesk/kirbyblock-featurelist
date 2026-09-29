@@ -58,16 +58,9 @@ section[data-block="featurelist"] {
 			div[data-field="content"] {
 				flex: 1;
 
-				[data-field="heading"] {
-					font-size: var(--pwfeaturelist-item-title-size);
-					line-height: var(--pwfeaturelist-item-title-line-height);
-				}
-				[data-field="heading"] + [data-field="text"]{
-					margin-top: var(--pwfeaturelist-item-title-gap);
-				}
-
+				/* title and description: Project Wizard → Elements › Items (the
+				   block's own values when switched on, see pagewizard) */
 				div[data-field="text"]{
-					font-size: var(--pwfeaturelist-item-text-size);
 					ul {
 						margin: .5rem 0 0;
 						list-style: disc;

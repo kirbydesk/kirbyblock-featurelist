@@ -67,7 +67,8 @@ if ($items->count() > 0):
 			endif;
 
 			// Content
-			echo '<div data-field="content">'."\n";
+			// Content: title and description in the style of Elements › Items
+			echo '<div data-field="content" data-entry>'."\n";
 
 				$align       = $block->blocksalignment()->value();
 				$heading     = $item->heading()->value();

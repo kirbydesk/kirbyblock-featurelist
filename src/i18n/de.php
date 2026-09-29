@@ -45,8 +45,8 @@
 	'prw.prop.item-icon-offset' => 'Vertikaler Versatz',
 	'prw.prop.item-icon-tile-padding' => 'Innenabstand',
 	'prw.prop.item-icon-tile-background' => 'Kachel',
-	'prw.prop.item-title-size' => 'Schriftgröße Titel',
+	'prw.prop.item-title-font-size' => 'Schriftgröße Titel',
 	'prw.prop.item-title-line-height' => 'Zeilenhöhe Titel',
-	'prw.prop.item-text-size' => 'Schriftgröße Text',
-	'prw.prop.item-title-gap' => 'Abstand Titel – Text',
+	'prw.prop.item-text-font-size' => 'Schriftgröße Beschreibung',
+	'prw.prop.item-title-spacing' => 'Abstand zur Beschreibung',
 );

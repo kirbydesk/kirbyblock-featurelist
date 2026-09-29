@@ -52,7 +52,7 @@
 					"min": 0,
 					"max": 4
 				},
-				"item-title-size": {
+				"item-title-font-size": {
 					"default": "1.25rem",
 					"lg": "1.25rem",
 					"xl": "1.25rem",
@@ -70,7 +70,7 @@
 					"min": 0.5,
 					"max": 3
 				},
-				"item-text-size": {
+				"item-text-font-size": {
 					"default": "1rem",
 					"lg": "1rem",
 					"xl": "1rem",
@@ -79,7 +79,7 @@
 					"min": 0.5,
 					"max": 4
 				},
-				"item-title-gap": {
+				"item-title-spacing": {
 					"value": "0.2rem",
 					"unit": "rem",
 					"step": 0.05,
@@ -356,6 +356,14 @@
 					"above"
 				],
 				"default": "above"
+			},
+			"item-entry": {
+				"label": "pw.field.item-entry",
+				"options": [
+					"global",
+					"own"
+				],
+				"default": "global"
 			},
 			"item-shape": {
 				"label": "kirbyblock-featurelist.item-shape",

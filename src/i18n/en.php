@@ -45,8 +45,8 @@
 	'prw.prop.item-icon-offset' => 'Vertical offset',
 	'prw.prop.item-icon-tile-padding' => 'Padding',
 	'prw.prop.item-icon-tile-background' => 'Tile',
-	'prw.prop.item-title-size' => 'Title Size',
+	'prw.prop.item-title-font-size' => 'Title Size',
 	'prw.prop.item-title-line-height' => 'Title Line Height',
-	'prw.prop.item-text-size' => 'Text Size',
-	'prw.prop.item-title-gap' => 'Title – Text Gap',
+	'prw.prop.item-text-font-size' => 'Description Size',
+	'prw.prop.item-title-spacing' => 'Gap to the description',
 );
