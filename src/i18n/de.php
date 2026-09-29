@@ -36,7 +36,7 @@
 	'pw.option.square' => 'Eckig',
 	'pw.field.title-style' => 'Anordnung',
 	'pw.option.plain' => 'Ohne',
-	'pw.option.tile' => 'Mit',
+	'pw.option.tile' => 'Kachel',
 	'pw.option.above' => 'Absatz',
 	'pw.option.inline' => 'Fließtext',
 	'prw.prop.item-icon-size' => 'Größe',

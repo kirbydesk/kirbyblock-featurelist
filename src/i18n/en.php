@@ -36,7 +36,7 @@
 	'pw.option.square' => 'Square',
 	'pw.field.title-style' => 'Arrangement',
 	'pw.option.plain' => 'Without',
-	'pw.option.tile' => 'With',
+	'pw.option.tile' => 'Tile',
 	'pw.option.above' => 'Paragraph',
 	'pw.option.inline' => 'Run-in',
 	'prw.prop.item-icon-size' => 'Size',
