@@ -200,3 +200,10 @@ section[data-block="featurelist"] [data-icon-style="tile"] [data-field="icon"]  
 section[data-block="featurelist"][data-style="variant"] [data-icon-style="tile"] [data-field="icon"]  { background-color: var(--pwfeaturelist-item-icon-tile-background-variant); }
 section[data-block="featurelist"][data-style="variant2"] [data-icon-style="tile"] [data-field="icon"] { background-color: var(--pwfeaturelist-item-icon-tile-background-variant2); }
 section[data-block="featurelist"][data-style="variant3"] [data-icon-style="tile"] [data-field="icon"] { background-color: var(--pwfeaturelist-item-icon-tile-background-variant3); }
+
+/* the intro's last element: no space below of its own before the features –
+   there only the gap to the intro applies (Project Wizard → Design ›
+   Spacing); the elements' space below applies within the intro */
+section[data-block="featurelist"][data-block] :is([data-field="tagline"], [data-field="heading"], [data-field="textarea"], [data-field="writer"], [data-field="markdown"]):has(+ [data-block="items"]):not([data-block="item"] *) {
+	margin-bottom: 0;
+}
