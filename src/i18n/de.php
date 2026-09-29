@@ -25,7 +25,7 @@
 	'pw.option.split' => 'Eingerückt',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
-	'pw.field.icon-position' => 'Icons',
+	'pw.field.icon-position' => 'Position',
 	'pw.field.icon-style' => 'Hintergrund',
 	'kirbyblock-featurelist.item-shape' => 'Kachel-Form',
 	'kirbyblock-featurelist.item-text-gap' => 'Abstand zur Einleitung',

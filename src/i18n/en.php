@@ -25,7 +25,7 @@
 	'pw.option.split' => 'Offset',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
-	'pw.field.icon-position' => 'Icons',
+	'pw.field.icon-position' => 'Position',
 	'pw.field.icon-style' => 'Background',
 	'kirbyblock-featurelist.item-shape' => 'Tile Shape',
 	'kirbyblock-featurelist.item-text-gap' => 'Gap to the intro',
