@@ -5,23 +5,11 @@
 				<div v-html="content.icon"></div>
 			</div>
 			<div>
-				<div class="pwHeading">
-					<div
-						v-if="content.heading.length"
-						@blur="update({ heading: $event.target.innerText });"
-					>
-						{{ content.heading }}
-					</div>
-					<div v-else class="placeholder">
-						{{ $t('kirbyblock-featurelist.item.heading.placeholder') }}
-					</div>
-				</div>
+				<!-- (only what is filled in: no placeholders) -->
+				<div v-if="content.heading" class="pwHeading">{{ content.heading }}</div>
 
-				<div class="pwText">
-					<div v-if="content.description" v-html="content.description"></div>
-					<div v-else class="placeholder">
-						{{ $t('kirbyblock-featurelist.item.description.placeholder') }}
-					</div>
+				<div v-if="content.description" class="pwText">
+					<div v-html="content.description"></div>
 				</div>
 
 			</div>
