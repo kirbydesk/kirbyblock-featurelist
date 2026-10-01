@@ -18,11 +18,11 @@
 	/* -------------- Layout --------------*/
 	'kirbyblock-featurelist.section-layout' => 'Layout',
 	'kirbyblock-featurelist.section-layout.help' => 'Default: tagline, heading and text above the features. Offset: they sit on the left, the features offset to the right (from 1024px).',
-	'kirbyblock-featurelist.section-layout.stacked' => 'Default',
-	'kirbyblock-featurelist.section-layout.split' => 'Offset',
+	'kirbyblock-featurelist.section-layout.stacked' => 'Stacked',
+	'kirbyblock-featurelist.section-layout.split' => 'Indented',
 	'prw.property.section-layout' => 'Layout',
-	'pw.option.stacked' => 'Default',
-	'pw.option.split' => 'Offset',
+	'pw.option.stacked' => 'Stacked',
+	'pw.option.split' => 'Indented',
 
 	/* -------------- Item look (Project Wizard → Items) --------------*/
 	'pw.field.icon-position' => 'Position',
