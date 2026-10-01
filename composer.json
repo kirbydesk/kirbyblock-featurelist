@@ -1,6 +1,6 @@
 {
 	"name": "kirbydesk/kirbyblock-featurelist",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"description": "Featurelist Block for Kirby CMS",
 	"type": "kirby-plugin",
 	"keywords": [
