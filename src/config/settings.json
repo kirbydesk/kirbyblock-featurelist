@@ -364,13 +364,19 @@
 				],
 				"default": "above"
 			},
-			"item-entry": {
+			"item-entry-title": {
 				"label": "pw.field.item-entry",
 				"options": [
 					"global",
 					"own"
-				],
-				"default": "global"
+				]
+			},
+			"item-entry-text": {
+				"label": "pw.field.item-entry",
+				"options": [
+					"global",
+					"own"
+				]
 			},
 			"item-shape": {
 				"label": "kirbyblock-featurelist.item-shape",
