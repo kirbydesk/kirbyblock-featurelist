@@ -28,7 +28,7 @@
 	'pw.field.icon-position' => 'Position',
 	'pw.field.icon-style' => 'Hintergrund',
 	'kirbyblock-featurelist.item-shape' => 'Form',
-	'kirbyblock-featurelist.item-text-gap' => 'Abstand zur Einleitung vergrößern',
+	'kirbyblock-featurelist.item-text-gap' => 'Abstand zur Einleitung',
 	'kirbyblock-featurelist.item-offset-gap' => 'Einrückung',
 	'kirbyblock-featurelist.item-offset-align' => 'Ausrichtung',
 	'kirbyblock-featurelist.item-radius' => 'Eckenradius',

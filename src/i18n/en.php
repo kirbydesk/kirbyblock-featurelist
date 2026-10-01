@@ -28,7 +28,7 @@
 	'pw.field.icon-position' => 'Position',
 	'pw.field.icon-style' => 'Background',
 	'kirbyblock-featurelist.item-shape' => 'Shape',
-	'kirbyblock-featurelist.item-text-gap' => 'Enlarge the gap to the intro',
+	'kirbyblock-featurelist.item-text-gap' => 'Gap to the intro',
 	'kirbyblock-featurelist.item-offset-gap' => 'Offset',
 	'kirbyblock-featurelist.item-offset-align' => 'Alignment',
 	'kirbyblock-featurelist.item-radius' => 'Corner radius',
