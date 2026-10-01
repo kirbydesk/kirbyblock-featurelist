@@ -15,13 +15,13 @@ section[data-block="featurelist"] {
 	/* -------------- Tagline Margins--------------*/
 	[data-field="tagline"] {
 		+ [data-block="items"] {
-			margin-top: var(--pwfeaturelist-item-text-gap);
+			padding-top: var(--pwfeaturelist-item-text-gap);
 		}
 	}
 	/* -------------- Heading Margins--------------*/
 	[data-field="heading"] {
 		+ [data-block="items"] {
-			margin-top: var(--pwfeaturelist-item-text-gap);
+			padding-top: var(--pwfeaturelist-item-text-gap);
 		}
 	}
 	/* -------------- Texts Margins--------------*/
@@ -29,7 +29,7 @@ section[data-block="featurelist"] {
 	[data-field="writer"],
 	[data-field="markdown"] {
 		+ [data-block="items"] {
-			margin-top: var(--pwfeaturelist-item-text-gap);
+			padding-top: var(--pwfeaturelist-item-text-gap);
 		}
 	}
 
@@ -111,10 +111,17 @@ section[data-block="featurelist"] {
 
 	/* -------------- Split layout: intro left, items right --------------*/
 	[data-block="intro"] + [data-block="items"] {
-		margin-top: var(--pwfeaturelist-item-text-gap);
+		padding-top: var(--pwfeaturelist-item-text-gap);
 	}
 }
 
+/* split, below 1024px the intro above the features: its last element keeps
+   its space below (beside them from 1024px: none) */
+@media (max-width: 1023px) {
+	section[data-block="featurelist"][data-layout-style="split"] [data-block="intro"] > :last-child {
+		margin-bottom: var(--pw-space-after);
+	}
+}
 @media (min-width: 1024px) {
 	section[data-block="featurelist"][data-layout-style="split"] [data-layout="grid-item"] {
 		display: grid;
@@ -124,7 +131,7 @@ section[data-block="featurelist"] {
 		align-items: start;
 
 		[data-block="intro"] + [data-block="items"] {
-			margin-top: 0;
+			padding-top: 0;
 		}
 	}
 	/* the intro centred to the features (Project Wizard → Design → Gaps) */
@@ -201,9 +208,3 @@ section[data-block="featurelist"][data-style="variant"] [data-icon-style="tile"]
 section[data-block="featurelist"][data-style="variant2"] [data-icon-style="tile"] [data-field="icon"] { background-color: var(--pwfeaturelist-item-icon-tile-background-variant2); }
 section[data-block="featurelist"][data-style="variant3"] [data-icon-style="tile"] [data-field="icon"] { background-color: var(--pwfeaturelist-item-icon-tile-background-variant3); }
 
-/* the intro's last element: no space below of its own before the features –
-   there only the gap to the intro applies (Project Wizard → Design ›
-   Spacing); the elements' space below applies within the intro */
-section[data-block="featurelist"][data-block] :is([data-field="tagline"], [data-field="heading"], [data-field="textarea"], [data-field="writer"], [data-field="markdown"]):has(+ [data-block="items"]):not([data-block="item"] *) {
-	margin-bottom: 0;
-}
